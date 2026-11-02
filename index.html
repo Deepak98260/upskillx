@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>UpskillX — Learn Skills. Build Your Future.</title>
+  <meta name="description" content="UpskillX offers structured, career-focused online courses with practical projects and expert-led learning.">
+  <meta name="theme-color" content="#6d28d9">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body data-page="home">
+
+  <header id="site-nav"></header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div>
+          <span class="hero-badge"><i></i> Learn Skills. Build Your Future.</span>
+          <h1>Upgrade Your Skills. <span class="grad-text">Unlock Your Potential.</span></h1>
+          <p class="lead">Learn industry-relevant skills through structured online courses, practical projects and expert-led learning.</p>
+          <div class="hero-cta">
+            <a class="btn btn-primary" href="#courses">Explore Courses →</a>
+            <a class="btn btn-ghost" href="enroll.html">Enroll Now</a>
+          </div>
+          <div class="hero-tags" id="hero-tags"></div>
+        </div>
+
+        <!-- Original education illustration -->
+        <div class="hero-art" aria-hidden="true">
+          <div class="art-card">
+            <svg viewBox="0 0 480 400" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <linearGradient id="hg1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#6d28d9"/><stop offset="1" stop-color="#c084fc"/></linearGradient>
+                <linearGradient id="hg2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ede9fe"/><stop offset="1" stop-color="#f5f3ff"/></linearGradient>
+              </defs>
+              <rect width="480" height="400" rx="22" fill="url(#hg2)"/>
+              <circle cx="400" cy="70" r="46" fill="#ddd6fe"/><circle cx="70" cy="340" r="54" fill="#f5d0fe" opacity=".7"/>
+              <!-- laptop -->
+              <rect x="110" y="110" width="260" height="170" rx="14" fill="#1a1033"/>
+              <rect x="120" y="120" width="240" height="150" rx="8" fill="url(#hg1)"/>
+              <path d="M70 296h340l-22 30H92z" fill="#4c1d95"/><rect x="200" y="296" width="80" height="6" rx="3" fill="#8b5cf6"/>
+              <!-- play button -->
+              <circle cx="240" cy="185" r="30" fill="#fff" opacity=".95"/><path d="M231 169l26 16-26 16z" fill="#6d28d9"/>
+              <!-- progress bar -->
+              <rect x="146" y="238" width="188" height="8" rx="4" fill="#fff" opacity=".35"/><rect x="146" y="238" width="118" height="8" rx="4" fill="#fff"/>
+              <!-- code card -->
+              <rect x="30" y="150" width="96" height="76" rx="14" fill="#fff" stroke="#ddd6fe"/>
+              <path d="M58 175l-12 12 12 12M98 175l12 12-12 12M82 170l-8 34" fill="none" stroke="#7c3aed" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+              <!-- chart card -->
+              <rect x="356" y="196" width="100" height="82" rx="14" fill="#fff" stroke="#ddd6fe"/>
+              <rect x="372" y="240" width="14" height="24" rx="4" fill="#c4b5fd"/><rect x="394" y="226" width="14" height="38" rx="4" fill="#a78bfa"/><rect x="416" y="210" width="14" height="54" rx="4" fill="#7c3aed"/>
+              <!-- graduation cap -->
+              <g transform="translate(318 40)"><path d="M0 28L50 8l50 20-50 20z" fill="#4c1d95"/><path d="M22 40v22c0 8 56 8 56 0V40l-28 11z" fill="#6d28d9"/><path d="M96 31v28" stroke="#c084fc" stroke-width="4" stroke-linecap="round"/></g>
+              <!-- sparkles -->
+              <path d="M70 80l6 14 14 6-14 6-6 14-6-14-14-6 14-6z" fill="#a78bfa"/><path d="M430 340l4 9 9 4-9 4-4 9-4-9-9-4 9-4z" fill="#c084fc"/>
+            </svg>
+          </div>
+          <div class="float f1"><span class="dot" id="f1ico"></span><div>Practical Projects<small>Learn by building</small></div></div>
+          <div class="float f2"><span class="dot" id="f2ico"></span><div>Flexible Learning<small>Study online, your pace</small></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- HIGHLIGHTS -->
+    <section class="stats" aria-label="Platform highlights">
+      <div class="container"><div class="stats-grid" id="stats-grid"></div></div>
+    </section>
+
+    <!-- COURSES -->
+    <section class="section" id="courses">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Explore Courses</span>
+          <h2>Pick a course. Build a career-ready skill set.</h2>
+          <p>Ten focused programs across tech, design, business and marketing — from beginner to advanced.</p>
+        </div>
+        <div class="filters" id="filters" role="group" aria-label="Filter by level"></div>
+        <div class="course-grid" id="course-grid"></div>
+      </div>
+    </section>
+
+    <!-- WHY CHOOSE US -->
+    <section class="section how" id="about">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">About UpskillX</span>
+          <h2>Why Choose Us?</h2>
+          <p>UpskillX is built around one idea: practical, structured learning that moves you toward real career goals.</p>
+        </div>
+        <div class="features-grid" id="features"></div>
+      </div>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section class="section" id="how">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">How It Works</span>
+          <h2>Start learning in four simple steps</h2>
+        </div>
+        <div class="steps" id="steps"></div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section how" id="faq">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">FAQ</span>
+          <h2>Frequently Asked Questions</h2>
+        </div>
+        <div class="faq-list" id="faq-list"></div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section" style="padding-bottom:0">
+      <div class="container">
+        <div class="cta-band reveal">
+          <h2>Learn Skills. Build Your Future.</h2>
+          <p>Choose your course today and take the next step in your learning journey.</p>
+          <a class="btn" href="enroll.html">Enroll Now</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="site-footer"></footer>
+
+  <!-- Course details modal -->
+  <div class="modal" id="details-modal" role="dialog" aria-modal="true" aria-label="Course details">
+    <div class="modal-box" id="details-box" style="text-align:left"></div>
+  </div>
+
+  <script src="assets/js/config.js"></script>
+  <script src="assets/js/courses.js"></script>
+  <script src="assets/js/common.js"></script>
+  <script>
+    /* Static content blocks rendered with shared icons */
+    (function () {
+      document.getElementById("hero-tags").innerHTML = ["Structured courses", "Practical projects", "Learn online"]
+        .map(function (t) { return "<span>" + icon("check", 18) + t + "</span>"; }).join("");
+      document.getElementById("f1ico").innerHTML = icon("layers", 18);
+      document.getElementById("f2ico").innerHTML = icon("clock", 18);
+
+      var feats = [
+        ["compass", "Industry-Relevant Curriculum", "Course content is organised around the skills employers look for in each field."],
+        ["layers", "Practical Learning", "Concepts are paired with exercises so you apply what you learn right away."],
+        ["clock", "Flexible Online Learning", "Learn online from wherever you are and fit study around your schedule."],
+        ["target", "Project-Based Education", "Build projects as you progress and finish with work you can showcase."]
+      ];
+      document.getElementById("features").innerHTML = feats.map(function (f) {
+        return '<div class="feature reveal"><div class="ico">' + icon(f[0], 26) + "</div><h3>" + f[1] + "</h3><p>" + f[2] + "</p></div>";
+      }).join("");
+
+      var steps = [
+        ["Explore Courses", "Browse the course catalogue and compare levels, duration and fees."],
+        ["Select Your Course", "Pick the course that matches your goals and click Enroll Now."],
+        ["Complete Enrollment", "Pay via the UPI QR code, then confirm with the support team."],
+        ["Start Learning", "Receive your access details once your enrollment is verified."]
+      ];
+      document.getElementById("steps").innerHTML = steps.map(function (s, i) {
+        return '<div class="step reveal"><div class="num">' + (i + 1) + "</div><h3>" + s[0] + "</h3><p>" + s[1] + "</p></div>";
+      }).join("");
+    })();
+  </script>
+  <script src="assets/js/home.js"></script>
+</body>
+</html>

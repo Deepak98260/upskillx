@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Complete Your Enrollment — UpskillX</title>
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#6d28d9">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body data-page="enroll">
+
+  <header id="site-nav"></header>
+
+  <main>
+    <section class="enroll-hero">
+      <div class="container">
+        <div class="crumbs"><a href="index.html">Home</a> / <a href="index.html#courses">Courses</a> / <span>Enrollment</span></div>
+        <h1>Complete Your <span class="grad-text">Enrollment</span></h1>
+        <p>Review your course, pay securely with UPI and confirm with our team.</p>
+        <div class="progress" aria-label="Enrollment progress">
+          <span class="s done"><b>1</b> Choose course</span><i class="bar"></i>
+          <span class="s now"><b>2</b> Pay via UPI</span><i class="bar"></i>
+          <span class="s"><b>3</b> Confirm with admin</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="container enroll-grid">
+      <!-- LEFT: course details -->
+      <div class="sticky">
+        <div class="panel">
+          <h2><span class="ico" id="ico-course"></span>Selected Course</h2>
+          <label for="course-select" class="notice" style="display:block;margin:0 0 8px">Change course</label>
+          <select id="course-select" class="course-select"></select>
+          <div class="course-summary">
+            <div class="thumb" id="sum-thumb"></div>
+          </div>
+          <div class="rows" style="margin-top:10px">
+            <div class="row"><span>Course Name</span><span id="sum-name"></span></div>
+            <div class="row"><span>Course Duration</span><span id="sum-duration"></span></div>
+            <div class="row"><span>Course Level</span><span id="sum-level"></span></div>
+            <div class="row total"><span>Course Fee</span><span id="sum-fee"></span></div>
+          </div>
+        </div>
+
+        <div class="panel support">
+          <h2 style="justify-content:center">Need Help With Enrollment?</h2>
+          <p>Our support team is happy to help with payment, course selection or access.</p>
+          <div class="support-btns">
+            <a class="btn btn-wa" id="wa-btn" target="_blank" rel="noopener">WhatsApp Us</a>
+            <a class="btn btn-ghost" id="mail-btn">Email Support</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- RIGHT: payment -->
+      <div class="panel pay-panel">
+        <span class="pill">Secure UPI Payment</span>
+        <h2 style="justify-content:center;margin-bottom:6px">Scan &amp; Pay</h2>
+        <div class="pay-amount"><small>Amount Payable</small><span id="pay-amount"></span></div>
+
+        <div class="qr-frame">
+          <div class="qr-inner">
+            <img id="qr-img" alt="UPI payment QR code — scan with any UPI app" width="414" height="443">
+            <div class="qr-fallback" id="qr-fallback">QR code image not found.<br>Add your file as <code>assets/images/payment-qr.png</code></div>
+          </div>
+        </div>
+
+        <ul class="instructions">
+          <li><span id="ins1"></span>Scan the QR code using any supported UPI payment application.</li>
+          <li><span id="ins2"></span>Please verify the payment details before completing your transaction.</li>
+        </ul>
+
+        <div class="panel" style="box-shadow:none;background:var(--p-50);border-color:var(--p-100);padding:8px 18px;text-align:left">
+          <div class="rows pay-info">
+            <div class="row"><span>Course Name</span><span id="pi-name"></span></div>
+            <div class="row"><span>Amount Payable</span><span id="pi-amount"></span></div>
+            <div class="row"><span>Payment Method</span><span id="pi-method"></span></div>
+          </div>
+        </div>
+
+        <button class="btn btn-primary btn-block" id="paid-btn" style="margin-top:20px;padding:16px">I Have Completed Payment</button>
+        <p class="notice">Payments are verified manually by the administrator. Your enrollment is not confirmed until verification is complete.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer id="site-footer"></footer>
+
+  <!-- Confirmation modal -->
+  <div class="modal" id="paid-modal" role="dialog" aria-modal="true" aria-labelledby="paid-title">
+    <div class="modal-box">
+      <div class="modal-ico" id="modal-ico"></div>
+      <h3 id="paid-title">Thank you! One last step</h3>
+      <p>Your payment is <b>not</b> verified automatically. To complete your enrollment, please contact the administrator with your payment screenshot or UPI transaction ID.</p>
+      <div class="modal-ref" id="modal-ref"></div>
+      <div class="support-btns">
+        <a class="btn btn-wa" id="modal-wa" target="_blank" rel="noopener">Send on WhatsApp</a>
+        <a class="btn btn-ghost" id="modal-mail">Send by Email</a>
+      </div>
+      <p class="notice">Access details are shared by the team only after your payment has been verified.</p>
+      <button class="btn btn-ghost btn-block" id="modal-close" style="margin-top:12px">Close</button>
+    </div>
+  </div>
+
+  <script src="assets/js/config.js"></script>
+  <script src="assets/js/courses.js"></script>
+  <script src="assets/js/common.js"></script>
+  <script src="assets/js/enroll.js"></script>
+</body>
+</html>
